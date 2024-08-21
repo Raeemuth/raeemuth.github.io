@@ -46,7 +46,26 @@ table {
 body {
   -webkit-text-size-adjust: none; }
 
-.text {
+/* Header Marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee-wrapper {
+  overflow: hidden;
+}
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: content-box;
+  animation: marquee 8s linear infinite;
+}
+
+.text-wa {
   background-color: hsla(0, 0%, 40%, 0.10);
   color: #3d4449;
   display: flex;
@@ -58,11 +77,11 @@ body {
   border-radius: 6px;
   margin-bottom: 1rem; }
 
-.text .message {
+.text-wa .message {
   flex: 1;
   margin-right: 10px; }
 
-.text .follow {
+.text-wa .follow {
   background-color: #f56a6a;
   color: white;
   text-decoration: none;
@@ -70,17 +89,30 @@ body {
   border-radius: 5px;
   display: inline-block; }
 
-@media (max-width: 800px) {
-  .text .message {
-    font-size: 0.9rem; }
-  .text .follow {
-    font-size: 0.9rem;
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+  .text-wa {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3rem; } }
+@media screen and (max-width: 1280px) {
+  .text-wa {
+    width: 100%;
+    max-width: 100%; }
+  .text-wa .message {
+    font-size: 0.8rem; }
+  .text-wa .follow {
+    font-size: 0.8rem;
     padding: 4px 8px; } }
-
+@media (max-width: 800px) {
+  .text-wa .message {
+    font-size: 0.8rem; }
+  .text-wa .follow {
+    font-size: 0.8rem;
+    padding: 4px 8px; } }
 @media (max-width: 500px) {
-  .text .message {
+  .text-wa .message {
     font-size: 0.68rem; }
-  .text .follow {
+  .text-wa .follow {
     font-size: 0.68rem;
     padding: 3px 6px; } }
 
@@ -2109,22 +2141,7 @@ button,
         position: absolute;
         top: 1em;
         width: 5em; } }
-/* Header Marquee */
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: content-box;
-  animation: marquee 10s linear infinite;
-}
+
 /* Header */
 #header {
   display: -moz-flex;
