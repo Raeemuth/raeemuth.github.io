@@ -2371,23 +2371,23 @@ button,
           text-rendering: auto;
           line-height: 1;
           text-transform: none !important;
-          font-family: Arial, sans-serif; /* Ganti dengan font yang diinginkan */
-          font-weight: normal; /* Atur ke normal untuk teks biasa */
-          content: 'Menu'; /* Ubah konten dari ikon ke teks */
-          color: #fff; /* Warna teks */
+          font-family: 'Font Awesome 5 Free'; /* Ganti dengan font Font Awesome */
+          font-weight: 900; /* Font Awesome 5 Free menggunakan font-weight 900 untuk ikon */
+          content: '\f103'; /* Kode Unicode untuk ikon panah kebawah (Font Awesome 5) */
+          color: #fff; /* Warna teks/ikon */
           text-align: center;
           display: block;
-          font-size: 14px; /* Ukuran font teks */
+          font-size: 14px; /* Ukuran ikon */
           width: 80px; /* Lebar elemen */
           height: 30px; /* Tinggi elemen */
-          line-height: 30px; /* Menyelaraskan teks di tengah vertikal */
+          line-height: 30px; /* Menyelaraskan ikon di tengah vertikal */
           position: absolute;
           left: 50%;
           margin-left: -40px; /* Mengatur posisi horizontal elemen */
           background: #f56a6a; /* Warna latar belakang */
           border-top: 0;
           border-radius: 0 0 0.35em 0.35em; /* Radius sudut */
-      }
+        }
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
