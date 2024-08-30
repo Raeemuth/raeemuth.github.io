@@ -183,6 +183,12 @@ body {
       text-align: center;
     }
 
+@media screen and (min-width: 1681px) {
+  .carousel article {
+    margin: 0 13.5em 0 0;
+  }
+}
+
     @media screen and (max-width: 1680px) {
       /* Carousel */
 
