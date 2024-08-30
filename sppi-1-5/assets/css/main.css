@@ -2373,7 +2373,7 @@ button,
           text-transform: none !important;
           font-family: 'Font Awesome 5 Free'; /* Ganti dengan font Font Awesome */
           font-weight: 900; /* Font Awesome 5 Free menggunakan font-weight 900 untuk ikon */
-          content: '\f103'; /* Kode Unicode untuk ikon panah kebawah (Font Awesome 5) */
+          content: 'Menu'; /* Kode Unicode untuk ikon panah kebawah (Font Awesome 5) */
           color: #fff; /* Warna teks/ikon */
           text-align: center;
           display: block;
