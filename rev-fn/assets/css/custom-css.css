@@ -1,3 +1,30 @@
+/* Pengaturan ukuran logo */
+.logo-size {
+  max-width: 300px; /* Agar tidak melampaui batas kolom */
+  height: auto; /* Menjaga proporsi gambar */
+}
+
+/* Pengaturan untuk garis pada logo */
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.separator {
+  border-left: 1px solid #666; 
+  height: 80px; 
+  margin-left: 8px; 
+  margin-right: 8px; 
+}
+
+/* Pengaturan jarak atas bawah navbar*/
+.navbar {
+  margin-top: -0.5em;
+  margin-bottom: -1.77em;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+}
+
+/* Pengaturan untuk tata letak postingan */
 .category-header {
   font-size: 1.5rem;
   font-weight: bold;
@@ -6,4 +33,11 @@
 }
 .content-item {
   margin-bottom: 15px;
+}
+
+/* Pengaturan untuk tata letak jumlah kata dan estimasi waktu membaca */
+.reading-info {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #666;
 }
