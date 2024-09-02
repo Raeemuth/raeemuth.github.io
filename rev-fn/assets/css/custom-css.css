@@ -26,9 +26,9 @@ body, html {
 /* Pengaturan jarak atas bawah navbar*/
 .navbar {
   margin-top: -0.5em;
-  margin-bottom: -1.77em;
-  padding-top: 0.5px;
-  padding-bottom: 0.5px;
+  margin-bottom: -5.2em;
+  padding-top: 12px;
+  padding-bottom: 5em;
 }
 
 /* Pengaturan rata kiri kanan navbar */
