@@ -74,3 +74,9 @@ body, html {
   font-style: italic;
   color: #666;
 }
+
+/* Pengaturan untuk gambar footer */
+.footer-logo {
+  width: 45px; 
+  height: auto;
+}
