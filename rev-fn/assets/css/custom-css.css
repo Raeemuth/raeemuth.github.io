@@ -1,82 +1,75 @@
-/* Menghapus margin */
-body, html {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /* Pengaturan ukuran logo */
 .logo-size {
-  max-width: 300px; 
-  height: auto; 
+  width: auto;
+  max-width: 900px;
+  height: auto;
+  margin-left: 25px;
+}
+@media (max-width: 576px) {
+  .logo-size {
+    width: 530px; /* Ukuran untuk layar sangat kecil (ponsel) */
+  }
+}
+@media (max-width: 768px) {
+  .logo-size {
+    width: 150px; /* Ukuran untuk layar kecil hingga menengah (tablet kecil) */
+  }
+}
+@media (max-width: 992px) {
+  .logo-size {
+    width: 350px; /* Ukuran untuk layar menengah (tablet besar, laptop kecil) */
+  }
+}
+@media (min-width: 992px) {
+  .logo-size {
+    width: 500px; /* Ukuran untuk layar besar (laptop besar, desktop) */
+  }
+}
+.text-end {
+  padding-right: 25px; /* Sesuaikan nilai padding sesuai kebutuhan */
 }
 
-/* Pengaturan untuk garis pada logo */
-.d-flex {
-  display: flex;
-  align-items: center;
-}
-.separator {
-  border-left: 1px solid #666; 
-  height: 80px; 
-  margin-left: 8px; 
-  margin-right: 8px; 
-  display: block;
-}
-
-/* Pengaturan jarak atas bawah navbar*/
 .navbar {
-  margin-top: -0.5em;
-  margin-bottom: -5.2em;
+  margin-top: 0.3em;
+  margin-bottom: -6.4em;
   padding-top: 12px;
   padding-bottom: 5em;
 }
 .regional-links {
-  margin-left: 4px;
+  margin-left: 30px;
+}
+.nav-position {
+  margin-right: 30px;
 }
 
-/* Pengaturan rata kiri kanan navbar */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
+/* Pengaturan navbar */
 .navbar-collapse {
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: -1.8em;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 .container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: 0;
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Pengaturan untuk tata letak postingan */
 .category-header {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0 10px;
 }
 .content-item {
   margin-bottom: 15px;
 }
 .negative-mb-1 {
-  margin-bottom: -0.45rem; 
-}
-
-/* Pengaturan untuk tata letak jumlah kata dan estimasi waktu membaca */
-.reading-info {
-  margin-bottom: 20px;
-  font-style: italic;
-  color: #666;
+  margin-bottom: -0.45rem;
 }
 
 /* Pengaturan untuk gambar footer */
+footer {
+  padding: 0 15px;
+}
 .footer-logo {
-  width: 45px; 
+  width: 80px;
   height: auto;
+  margin: 0 10px;
 }
