@@ -1,7 +1,14 @@
+/* Menghapus margin */
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Pengaturan ukuran logo */
 .logo-size {
-  max-width: 300px; /* Agar tidak melampaui batas kolom */
-  height: auto; /* Menjaga proporsi gambar */
+  max-width: 300px; 
+  height: auto; 
 }
 
 /* Pengaturan untuk garis pada logo */
@@ -22,6 +29,25 @@
   margin-bottom: -1.77em;
   padding-top: 0.5px;
   padding-bottom: 0.5px;
+}
+
+/* Pengaturan rata kiri kanan navbar */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: -1.8em;
+  padding-left: 0;
+  padding-right: 0;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /* Pengaturan untuk tata letak postingan */
