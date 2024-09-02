@@ -21,6 +21,7 @@ body, html {
   height: 80px; 
   margin-left: 8px; 
   margin-right: 8px; 
+  display: block;
 }
 
 /* Pengaturan jarak atas bawah navbar*/
@@ -29,6 +30,9 @@ body, html {
   margin-bottom: -5.2em;
   padding-top: 12px;
   padding-bottom: 5em;
+}
+.regional-links {
+  margin-left: 4px;
 }
 
 /* Pengaturan rata kiri kanan navbar */
@@ -59,6 +63,9 @@ body, html {
 }
 .content-item {
   margin-bottom: 15px;
+}
+.negative-mb-1 {
+  margin-bottom: -0.45rem; 
 }
 
 /* Pengaturan untuk tata letak jumlah kata dan estimasi waktu membaca */
