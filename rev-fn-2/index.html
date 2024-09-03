@@ -7,7 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Accept-CH" content="Sec-CH-Viewport-Width">
   <meta name="description"
     content="Indonesian Union for Food Business Entrepreneur is dedicated to empowering food entrepreneurs with innovative solutions and market opportunities.">
   <meta name="keywords"
@@ -22,57 +23,7 @@
     content="Empowering food entrepreneurs with innovative solutions and market opportunities in the Indonesian food industry.">
   <title>Indonesian Union For Food Business Entrepreneur</title>
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    @media (max-width: 576px) {
-      .logo-size {
-        max-width: 100%;
-      }
-    }
-
-    @media (min-width: 576px) and (max-width: 768px) {
-      .logo-size {}
-    }
-
-    @media (min-width: 768px) {
-      .logo-size {
-        max-width: 900%;
-      }
-    }
-
-    .navbar-custom {
-      margin-bottom: -1.8rem;
-    }
-
-    @media (min-width: 576px) and (max-width: 768px) {
-      .navbar-toggler {
-        position: absolute;
-        top: 12px;
-      }
-    }
-
-    .footer {
-      padding: 15px 0;
-    }
-
-    .footer-logo {
-      width: 80px;
-      height: auto;
-      margin: 0 3px;
-    }
-
-    @media (max-width: 576px) {
-      .footer-logo {
-        width: 60px;
-        margin-top: 5px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .logo-main {
-        margin-bottom: -25px;
-      }
-    }
-  </style>
+  <link href="assets/css/custom-css.css" rel="stylesheet">
 </head>
 
 <body>
@@ -81,8 +32,7 @@
       <div class="col-12 col-md-1 d-flex justify-content-center justify-content-md-start align-items-center">
         <img src="assets/image/logo.png" alt="BPD Logo" class="img-fluid logo-size">
       </div>
-      <div
-        class="col-12 col-md-4 ms-auto mt-3 mt-md-0 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+      <div class="col-12 col-md-4 ms-auto mt-3 mt-md-0 d-flex flex-column justify-content-center">
         <p class="mb-0 small">
           <em>Strengthening Capacity to Reach Global Market</em>
         </p>
@@ -158,11 +108,10 @@
       </div>
     </nav>
   </header>
-
   <main class="container-fluid">
     <div class="row">
       <div class="col-12 p-0">
-        <img src="assets/image/logo-1.png" alt="Connecting Puzzle Pieces" class="img-fluid w-100 logo-main">
+        <img src="assets/image/logo-1.png" alt="Connecting Puzzle Pieces" class="img-fluid w-100">
       </div>
     </div>
     <div class="row mt-4">
@@ -173,9 +122,31 @@
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
           <h2 class="h6">A fundamental shift in the way we produce and consume food is necessary</h2>
           <div class="text-end text-md-start">
-            <a href="#" class="mb-0"><strong>ASIA FOOD HUB</strong></a>
+            <a href="#" class="mb-0" data-bs-toggle="modal" data-bs-target="#asiaFoodHubModal"><strong>ASIA FOOD
+                HUB</strong></a>
           </div>
         </div>
+        <!-- MODALS -->
+        <div class="modal fade" id="asiaFoodHubModal" tabindex="-1" aria-labelledby="asiaFoodHubModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="asiaFoodHubModalLabel">Changelog: Serikat Pengusaha Pangan Indonesia
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Konten modal di sini -->
+                Update start from 14.00 - 03.22 GMT +7
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODALS END -->
         <div class="row">
           <div class="col-md-6">
             <p>The Food Innovation Hubs Global Initiative strengthens global, regional and country-led innovation
@@ -193,21 +164,71 @@
       </div>
     </div>
   </main>
-  <footer class="footer my-4">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 text-center text-md-start">
-          <p class="small mb-0">&copy; 2024 Serikat Pengusaha Pangan Indonesia. All rights reserved.</p>
+  <hr>
+
+ <!-- News Section -->
+<div class="container-fluid my-4">
+  <section id="news" class="my-4">
+    <h2 class="category-header">BERITA</h2>
+    <div class="row">
+      <!-- Content Item 1 -->
+      <div class="col-md-4 content-item mb-4">
+        <div class="card">
+          <img src="assets/image/berita-1.jpg" class="card-img-top" alt="Content 1">
+          <div class="card-body">
+            <h5 class="card-title">Revolusi Teknologi Pertanian: Memperkenalkan Sistem Pertanian Cerdas</h5>
+            <p class="card-text">Pertanian cerdas merupakan solusi inovatif yang tengah mengubah lanskap industri pertanian global. Dengan mengintegrasikan teknologi canggih seperti Internet of Things (IoT), ..</p>
+            <a href="content/berita-1.html" class="btn btn-primary">Read More</a>
+          </div>
         </div>
-        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-          <img src="assets/image/footer.jpg" alt="Logo 1" class="footer-logo">
-          <img src="assets/image/footer.jpg" alt="Logo 2" class="footer-logo">
-          <img src="assets/image/footer.jpg" alt="Logo 3" class="footer-logo">
+      </div>
+      <!-- Content Item 2 -->
+      <div class="col-md-4 content-item mb-4">
+        <div class="card">
+          <img src="assets/image/berita-2.jpg" class="card-img-top" alt="Content 2">
+          <div class="card-body">
+            <h5 class="card-title">Inovasi dan Teknologi dalam Agrikultur: Mendorong Pertanian Berkelanjutan di Era Digital</h5>
+            <p class="card-text">Dengan tantangan global yang semakin kompleks, seperti perubahan iklim dan pertumbuhan populasi, sektor agrikultur kini berada di garis depan inovasi dan teknologi..</p>
+            <a href="content/berita-2.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Content Item 3 -->
+      <div class="col-md-4 content-item mb-4">
+        <div class="card">
+          <img src="assets/image/berita-3.jpg" class="card-img-top" alt="Content 3">
+          <div class="card-body">
+            <h5 class="card-title">Inovasi Teknologi: Mempercepat Revolusi Pertanian di Indonesia</h5>
+            <p class="card-text">Dengan tantangan global yang semakin kompleks, seperti perubahan iklim dan pertumbuhan populasi, sektor agrikultur kini berada di garis depan inovasi dan teknologi. Dari penggunaan drone hingga kecerdasan..</p>
+            <a href="content/berita-3.html" class="btn btn-primary">Read More</a>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </section>
+</div>
+ 
+
+    <footer class="bg-body">
+      <div class="container p-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0 footer-text">© 2024 SPPI. All rights reserved.</p>
+          <div class="d-flex align-items-center">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+              style="width: 50px; height: auto; margin-right: 2px;" alt="Gambar 1" />
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+              style="width: 50px; height: auto; margin-right: 2px;" alt="Gambar 2" />
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+              style="width: 50px; height: auto; margin-right: 2px;" alt="Gambar 3" />
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" style="width: 50px; height: auto;"
+              alt="Gambar 4" />
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
